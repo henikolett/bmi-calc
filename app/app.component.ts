@@ -15,9 +15,8 @@ import { BodyMassIndexPipe } from './bmi-pipe';
 			
 			<div class="content">
 				<div class="content-subhead intro">
-					<p>Plese, provide us with some sensitive information about yourself. Promise, we won't tell anyone!</p>
-					<p>We just need to know your height & weight to give you an appropriate directive about your Body Mass Index (BMI). 
-					And your age, just to be sure.</p>
+					<p>Plese, provide us with some information about yourself. Promise, we won't tell anyone!
+					We just need to know your age, height & weight to calculate your Body Mass Index (BMI).</p>
 				</div>	
 				<div class="pure-g user-data">
 					<div class="pure-u-1 pure-u-md-1-2">
@@ -43,10 +42,10 @@ import { BodyMassIndexPipe } from './bmi-pipe';
 						</form>		
 					</div>
 					<div class="pure-u-1 pure-u-md-1-2">
-						<h2>Here be your results</h2>
+						<h2>Here are your results</h2>
 						<div class="results">
 							<div>
-								<label>You are a </label> {{ user.age }} years old person, {{ user.height }} cm tall and you weigh {{ user.weight }} kgs.
+								<label>You are </label> {{ user.age }} years old, {{ user.height }} cm tall and you weigh {{ user.weight }} kgs.
 							</div>
 							<div class="bmi">
 								<label>Your BMI: </label> {{ user.weight | bodyMassIndex: user.height }}

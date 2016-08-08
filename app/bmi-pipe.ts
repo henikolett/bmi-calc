@@ -14,6 +14,6 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class BodyMassIndexPipe implements PipeTransform {
 	transform(weight: number, height:string):number {
 		let hei = parseFloat(height);
-		return Math.round(weight/((hei/100)*(hei/100));
+		return Math.round(weight/((hei/100)*(hei/100)));
 	}
 }
